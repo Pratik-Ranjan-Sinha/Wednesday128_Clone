@@ -1,0 +1,149 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Light.ttf);
+    font-weight: 200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #F5F3EA;
+    overflow-x: hidden;
+}
+#page1{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    border-bottom: 1px solid #151C31;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    gap: 10em;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6em;
+}
+#nav3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+#nav h1{
+    font-family: neuton;
+    cursor: pointer;
+}
+#nav h1 span{
+    font-size: 40px;
+    font-family: neuton;
+    color: #FF5858;
+}
+#nav h4{
+    font-weight: 100;
+    cursor: pointer;
+}
+#nav #nav3 h4:nth-child(2){
+    color: #FF5858;
+}
+#nav3 i{
+    cursor: pointer;
+    font-size: 18px;
+}
+#nav #nav3 h4:nth-child(3){
+    background-color: #151C31;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+#center{
+    text-align: center;
+    padding-top: 65px;
+}
+#center h1{
+    font-family: neuton;
+    font-size: 73px;
+    color: #151C31;
+}
+#center h1:nth-child(1){
+    color: #FF5858;
+}
+#center p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+#page1 img{
+    margin-top: 3.2%;
+    margin-left: 12.5%;
+    overflow-x: hidden;
+}
+#main #page2{
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 6.9%;
+    text-align: center;
+}
+#main #page2 h1{
+    font-family: neuton;
+    font-size: 2.5vw;
+    letter-spacing: 2.4px;
+    color: #151C31;
+}
+#main #page2  p{
+    margin-top: 2.8vh;
+    font-size: 0.85vw;
+    color: #777;
+    font-weight: 200;
+}
+#elem_container{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#elem_container .elem{
+    height: 68vh;
+    width: 30%;
+    background-color: transparent;
+    margin-top: 6%;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all ease 300ms;
+}
+#elem_container .elem:hover{
+    background-color: #FFB07B;
+    cursor: pointer;
+}
+#elem_container .elem:hover img{
+    filter: grayscale(10);
+}
+#elem_container .elem img{
+    height: 90%;
+    width:100%;
+    object-fit: cover;
+    border-top: 1px solid #151C31;
+    border-left: 1px solid #151C31;
+    border-right: 3px solid #151C31;
+    border-bottom: 3px solid #151C31;
+    border-radius: 4px;
+}
+.elem h2{
+    margin-top: 10px;
+    font-family: neuton;
+    font-size: 30px;
+}
