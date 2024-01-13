@@ -3,6 +3,14 @@
     src: url(./Gilroy-Light.ttf);
     font-weight: 200;
 }
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
