@@ -34,36 +34,41 @@ html,body{
 }
 #page1 #img1{
     position: absolute;
-    top: 5%;
-    left: 22.3%;
+    top: 10%;
+    left: 34.3%;
+    z-index: 5;
 }
 #page1 #img2{
     position: absolute;
-    left: 4.5%;
-    top: 16%;
+    left: 17%;
+    top: 20%;
+    z-index: 5;
 }
 #page1 #img3{
     position: absolute;
-    top: 20%;
-    height: 200px;
-    left: 13.8%;
+    top: 24%;
+    height: 22vh;
+    left: 26.8%;
+    z-index: 5;
 }
 #page1 #img4{
     position: absolute;
-    left: 51.8%;
-    top: 8%;
+    left: 64%;
+    top: 14%;
+    z-index: 5;
 }
 #page1 #img5{
     position: absolute;
     right: 21.8%;
-    top: 22%;
+    top: 28%;
+    z-index: 5;
 }
 #nav{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90px;
-    width: 100%;
+    width: 100vw;
     gap: 10em;
 }
 #nav2{
@@ -76,18 +81,21 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 1.1vw;
 }
 #nav h1{
+    font-size: 2vw;
     font-family: neuton;
     cursor: pointer;
+    color: #151C31;
 }
 #nav h1 span{
-    font-size: 40px;
+    font-size: 2.4vw;
     font-family: neuton;
     color: #FF5858;
 }
 #nav h4{
+    font-size: 0.8vw;
     font-weight: 100;
     cursor: pointer;
 }
@@ -96,7 +104,12 @@ html,body{
 }
 #nav3 i{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1vw;
+}
+#nav #menu{
+    font-size: 5.5vw;
+    color: #151C31;
+    display: none;
 }
 #nav #nav3 h4:nth-child(3){
     background-color: #151C31;
@@ -110,7 +123,7 @@ html,body{
 }
 #center h1{
     font-family: neuton;
-    font-size: 73px;
+    font-size: 4vw;
     color: #151C31;
 }
 #center h1:nth-child(1){
@@ -118,13 +131,13 @@ html,body{
 }
 #center p{
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 1.1vw;
 }
 #page1 #cover_img{
-    /* object-fit: cover; */
-    margin-top: 3.2%;
+    height: 100vh;
+    width: 73vw;
+    margin-top: 6%;
     margin-left: 12.5%;
-    overflow-x: hidden;
 }
 #main #page2{
     min-height: 100vh;
@@ -183,9 +196,82 @@ html,body{
     font-family: neuton;
     font-size: 30px;
 }
-@media (max-width:600px) {
+@media (max-width:600px) {          /* Responsive Code For Mobile Phones Only */
+    #nav{
+        gap: 45vw;
+    }
+    #nav h1{
+        font-size: 7vw;
+    }
+    #nav h1 span{
+        font-size: 8.5vw;
+    }
+    #nav #nav2{
+        display: none;
+    }
+    #nav #nav3{
+        display: none;
+    }
+    #nav #menu{
+        display: block ;
+    }
+    #page1 #img1{
+        top: 9%;
+        left: 33%;
+        scale: 0.4;
+    }
+    #page1 #img2{
+        top: 15%;
+        left: 13%;
+        scale: 0.3;
+    }
+    #page1 #img3{
+        height: 15vh;
+        top: 21%;
+        left: 20%;
+        scale: 0.4;
+    }
+    #page1 #img4{
+        top: 12%;
+        left: 60%;
+        scale: 0.3;
+    }
+    #page1 #img5{
+        top: 24%;
+        right: 18%;
+        scale: 0.4;
+    }
+    #page1 #center h1{
+        font-size: 7.5vw;
+    }
+    #page1 #center p{
+        margin-top: 13px;
+        font-size: 2.3vw;
+    }
+    #page1{
+        margin-bottom: -25vh;
+        border-bottom: none;
+    }
     #page1 #cover_img{
-        height: 38vh;
+        margin-left: 0;
+        height: 35vh;
+        width: 100%;
+        border-bottom: 1px solid #151C31;
+    }
+    #main #page2 h1{
+        font-size: 10vw;
+    }
+    #main #page2 p{
+        font-size: 3vw;
+    }
+    #elem_container .elem{
+        height: 65vh;
         width: 80vw;
+        margin-bottom: 3vh;
+    }
+    .elem h2{
+        margin-top: 6px;
+        font-size: 25px;
     }
 }
+
