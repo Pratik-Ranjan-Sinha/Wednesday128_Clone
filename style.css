@@ -30,6 +30,33 @@ html,body{
     width: 100vw;
     position: relative;
     border-bottom: 1px solid #151C31;
+    position: relative;
+}
+#page1 #img1{
+    position: absolute;
+    top: 5%;
+    left: 22.3%;
+}
+#page1 #img2{
+    position: absolute;
+    left: 4.5%;
+    top: 16%;
+}
+#page1 #img3{
+    position: absolute;
+    top: 20%;
+    height: 200px;
+    left: 13.8%;
+}
+#page1 #img4{
+    position: absolute;
+    left: 51.8%;
+    top: 8%;
+}
+#page1 #img5{
+    position: absolute;
+    right: 21.8%;
+    top: 22%;
 }
 #nav{
     display: flex;
@@ -93,7 +120,8 @@ html,body{
     margin-top: 30px;
     font-size: 18px;
 }
-#page1 img{
+#page1 #cover_img{
+    /* object-fit: cover; */
     margin-top: 3.2%;
     margin-left: 12.5%;
     overflow-x: hidden;
@@ -154,4 +182,10 @@ html,body{
     margin-top: 10px;
     font-family: neuton;
     font-size: 30px;
+}
+@media (max-width:600px) {
+    #page1 #cover_img{
+        height: 38vh;
+        width: 80vw;
+    }
 }
