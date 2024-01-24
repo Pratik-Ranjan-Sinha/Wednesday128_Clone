@@ -41,3 +41,18 @@ tl2.from("#main #page2 p",{
     opacity:0,
     stagger: 0.01
 })
+var menu = document.querySelector("#nav #menu")
+var menu_tab = document.querySelector("#page1 #res_side")
+var flag = 0
+menu.addEventListener("click",function(){
+    if(flag == 0){
+        menu_tab.style.right = "0"
+        menu_tab.style.transition = "all ease 400ms"
+        flag = 1
+    }
+    else{
+        menu_tab.style.right = "-80%"
+        menu_tab.style.transition = "all ease 400ms"
+        flag = 0
+    }
+})

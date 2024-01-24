@@ -30,7 +30,55 @@ html,body{
     width: 100vw;
     position: relative;
     border-bottom: 1px solid #151C31;
-    position: relative;
+}
+#page1 #res_side{
+    height: 80vh;
+    width: 70vw;
+    background-color: #f5f3eab4;
+    position: absolute;
+    backdrop-filter: blur(2.5px);
+    z-index: 6;
+    top: 10%;
+    right: -80%;
+    border-radius: 8px;
+    display: none;
+    padding-top: 5vh;
+    padding-left: 7vw;
+    position: fixed;
+}
+#page1 #res_side #top h4{
+    font-size: 2vw;
+    font-size: 2.8vh;
+    color: #151C31;
+    line-height: 7vh;
+}
+#page1 #res_side #bottom{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%,0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page1 #res_side #top i{
+    font-size: 18px;
+}
+#page1 #res_side #bottom h4{
+    font-size: 3.5vw;
+    padding: 10px 18px;
+}
+#page1 #res_side #bottom h4:nth-child(1){
+    background-color: #F5F3EA;
+    border-radius: 4px;
+    color: #FF5858;
+}
+#page1 #res_side #bottom h4:nth-child(2){
+    background-color: #151C31;
+    color: white;
+    border-radius: 4px;
 }
 #page1 #img1{
     position: absolute;
@@ -64,12 +112,16 @@ html,body{
     z-index: 5;
 }
 #nav{
+    background-color: #f5f3eab4;
+    backdrop-filter: blur(2.5px);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90px;
     width: 100vw;
     gap: 10em;
+    position: fixed;
+    z-index: 100;
 }
 #nav2{
     display: flex;
@@ -119,7 +171,7 @@ html,body{
 }
 #center{
     text-align: center;
-    padding-top: 65px;
+    padding-top: 80px;
 }
 #center h1{
     font-family: neuton;
@@ -146,6 +198,7 @@ html,body{
     text-align: center;
 }
 #main #page2 h1{
+    margin-top: 4%;
     font-family: neuton;
     font-size: 2.5vw;
     letter-spacing: 2.4px;
@@ -196,6 +249,57 @@ html,body{
     font-family: neuton;
     font-size: 30px;
 }
+#page2 #container1,#container2{
+    height: 17.5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#page2 #container1 .bars{
+    height: 1.7vh;
+    width: 27vw;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#page2 #container2 .bars{
+    height: 1.7vh;
+    width: 27vw;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#page2 #container1 .bars #cover1{
+    height: 100%;
+    width: 95%;    /* It is in its initial Form we'll have to make it final in javascript*/
+    background-color: #151C31;
+    border-radius: 50px;
+}
+/* #page2 #container1 h1{
+    font-size: 2vw;
+    color: #151C31;
+} */
+#page2 #container1 .bars #cover2{
+    height: 100%;
+    width: 92%;    /* It is in its initial Form we'll have to make it final in javascript*/
+    background-color: #151C31;
+    border-radius: 50px;
+}
+#page2 #container2 .bars #cover3{
+    height: 100%;
+    width: 97%;    /* It is in its initial Form we'll have to make it final in javascript*/
+    background-color: #151C31;
+    border-radius: 50px;
+}
+#page2 #container2 .bars #cover4{
+    height: 100%;
+    width: 88%;    /* It is in its initial Form we'll have to make it final in javascript*/
+    background-color: #151C31;
+    border-radius: 50px;
+}
+
 @media (max-width:600px) {          /* Responsive Code For Mobile Phones Only */
     #nav{
         gap: 45vw;
@@ -214,6 +318,9 @@ html,body{
     }
     #nav #menu{
         display: block ;
+    }
+    #page1 #res_side{
+        display: block;
     }
     #page1 #img1{
         top: 9%;
@@ -274,4 +381,3 @@ html,body{
         font-size: 25px;
     }
 }
-
