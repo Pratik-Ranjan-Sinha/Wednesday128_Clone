@@ -65,7 +65,7 @@ You can see a live demo of the project by opening the `index.html` file in your 
 
 Here's a screenshot of the homepage layout:
 
-![Homepage Screenshot](https://assets-global.website-files.com/63be6b95d526b7b72dcb1d66/63c668fb65ab0c02ae2e92b6_Shape%207.png)
+![image](https://github.com/user-attachments/assets/aaa232bb-4f49-44e7-bed8-453ab64cc168)
 
 ## Customization Tips
 
