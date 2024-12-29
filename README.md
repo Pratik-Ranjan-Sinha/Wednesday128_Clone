@@ -59,7 +59,7 @@ This project aims to replicate the structure of an ecommerce template, with a fo
 
 ## Demo
 
-You can see a live demo of the project by opening the `index.html` file in your browser.
+You can see a live demo of the project by opening the `[index.html](https://pratik-ranjan-sinha.github.io/Wednesday128_Clone/)` file in your browser.
 
 ## Screenshot
 
